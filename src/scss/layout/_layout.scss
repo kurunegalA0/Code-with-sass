@@ -1,5 +1,8 @@
 nav {
-  a {
+  display: flex;
+  justify-content: center;
+  
+  .nav-link{
     color: $primary-color;
   }
 }
@@ -9,10 +12,15 @@ header {
   background-image: url('../../images/header.jpg');
   background-size: cover;
   text-align: center;
+  h1{
+    font-size: $medium; 
+    padding-top: 20px;
+  }
 }
 
 .card {
   border-radius: 5px;
+  background-color:#e0ddb2 ;
 
   .img {
     background-size: cover;
@@ -20,11 +28,21 @@ header {
     width: 100%;
     background-position: center;
   }
+  .card-img-top{
+    padding-top: 20px;
+  }
 }
 
 main {
+  
   aside {
+    
+    border: $border-size solid $border-color;
+    
+   
+    
   }
+  
 }
 
 footer {
@@ -32,4 +50,16 @@ footer {
   a {
     color: white;
   }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  li{
+    list-style: none;
+    
+
+  }
 }
+
+          
